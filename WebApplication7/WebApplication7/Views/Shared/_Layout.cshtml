@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Raymond Kyu Lee</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/assets/bootstrap/css/bootstrap.min.css")
+    @Styles.Render("~/assets/css/simpletextrotator.css")
+    @Styles.Render("~/assets/css/font-awesome.min.css")
+    @Styles.Render("~/assets/css/et-line-font.css")
+    @Styles.Render("~/assets/css/magnific-popup.css")
+    @Styles.Render("~/assets/css/flexslider.css")
+    @Styles.Render("~/assets/css/owl.carousel.css")
+    @Styles.Render("~/assets/css/animate.css")
+    @Styles.Render("~/assets/css/style.css")
+
+</head>
+<body>
+
+
+    <!-- Navigation start -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Raymond Kyu Lee</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="custom-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                                
+                                <li><a href="/"><i class="fa fa-link fa-sm"></i>Home</a></li>
+                                <li><a href="/Home/About"><i class="fa fa-link fa-sm"></i>About</a></li>
+                             
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                        <ul class="dropdown-menu">
+
+                                <li><a href="/Home/Portfolio"><i class="fa fa-link fa-sm"></i>Portfolio</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                        <ul class="dropdown-menu">
+
+                                <li><a href="/Posts/Index"><i class="fa fa-link fa-sm"></i>Blog Index</a></li>
+                                <li><a href="/Posts/Admin"><i class="fa fa-link fa-sm"></i>Admin</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resume</a>
+                        <ul class="dropdown-menu">
+
+                                <li><a href="/Home/Resume"><i class="fa fa-link fa-sm"></i>Resume</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+                        <ul class="dropdown-menu">
+
+                                <li><a href="/Home/Contact"><i class="fa fa-link fa-sm"></i>Contact</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a>&nbsp;</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <div class="dropdown-search">
+                                    <form role="form">
+                                        <input type="text" class="form-control" placeholder="Search...">
+                                        <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">English</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Korean</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- Navigation end -->
+
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+        @RenderBody()
+</body>
+</html>
